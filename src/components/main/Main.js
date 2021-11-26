@@ -1,9 +1,18 @@
+import { Suspense } from "react";
+import { Route, Switch } from "react-router-dom";
+import { mainRoutes } from "../../routes/mainRoutes";
 import MainStyled from "./MainStyled";
 
 const Main = () => {
   return (
     <MainStyled>
-      <h1>Main</h1>
+      <Suspense fallback="">
+        <Switch>
+          {mainRoutes.map(({ path, exact, component }) => (
+            <Route path={path} exact={exact} component={component} key={path} />
+          ))}
+        </Switch>
+      </Suspense>
     </MainStyled>
   );
 };
