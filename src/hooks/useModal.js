@@ -23,10 +23,10 @@ const useModal = () => {
     };
   }, [location]);
 
-  //   useEffect(() => {
-  //     const body = document.querySelector("body");
-  //     body.style.overflow = stateModal.isModalOpen ? "hidden" : "auto";
-  //   }, [stateModal.isModalOpen]);
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = stateModal.isModalOpen ? "hidden" : "auto";
+  }, [stateModal.isModalOpen]);
 
   const closeModalOnLocation = () =>
     setOptionModal((prev) => ({ ...prev, isModalOpen: false }));
@@ -37,7 +37,7 @@ const useModal = () => {
   const setOpenModal = () =>
     setOptionModal((prev) => ({ ...prev, isModalOpen: !prev.isModalOpen }));
 
-  return [stateModal, setOpenModal, setOptionModal];
+  return [stateModal, setOpenModal];
 };
 
 export default useModal;

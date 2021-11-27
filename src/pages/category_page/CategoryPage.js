@@ -1,7 +1,11 @@
+import CategotyList from "../../components/category_list/CategotyList";
+import FormCategory from "../../components/form_category/FormCategory";
+
 const CategoryPage = () => {
   return (
     <>
-      <h2>category page</h2>
+      <FormCategory />
+      <CategotyList />
     </>
   );
 };

@@ -3,13 +3,13 @@ import Modal from "../modal/Modal";
 import Navigation from "../navigation/Navigation";
 import HeaderStyled from "./HeaderStyled";
 import sprite from "../../images/sprite.svg";
+import Logo from "../logo/Logo";
 
 const Header = () => {
-  const [stateModal, setOpenModal, setOptionModal] = useModal();
+  const [stateModal, setOpenModal] = useModal();
   return (
     <HeaderStyled>
-      <h3>logo</h3>
-
+      <Logo />
       {stateModal.width > stateModal.breakPointMobile ? (
         <Navigation />
       ) : (
