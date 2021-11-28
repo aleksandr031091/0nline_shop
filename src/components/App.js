@@ -12,7 +12,6 @@ const App = () => {
 
   useEffect(() => {
     dispatch(setProducts(products));
-    history.push("/");
   }, [dispatch, history]);
 
   return (
