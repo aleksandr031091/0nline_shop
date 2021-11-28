@@ -48,7 +48,7 @@ const SlickSlider = ({ homePageState }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     slidesToShow: countSliderPage(),
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
