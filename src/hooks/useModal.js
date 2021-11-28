@@ -3,6 +3,7 @@ import { useLocation } from "react-router";
 
 const initialState = {
   width: window.innerWidth,
+  height: window.innerHeight,
   breakPointDesctop: 1280,
   breakPointMobile: 485,
   isModalOpen: false,

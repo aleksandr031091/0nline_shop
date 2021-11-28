@@ -1,15 +1,14 @@
 import { useSelector } from "react-redux";
-import CategotyList from "../../components/category_list/CategotyList";
 import { getAllProducts } from "../../redux/products/productsSelectors";
+import CategotyList from "../../components/category_list/CategotyList";
+import HomeSlider from "../../components/homeSlider/HomeSlider";
 import HomePageStyled from "./HomePageStyled";
 
 const sliderData = {
-  firstImage:
-    "https://res.cloudinary.com/sahsa/image/upload/v1637953597/samples/landscapes/beach-boat.jpg",
+  firsImage:
+    "https://res.cloudinary.com/sahsa/image/upload/v1637953601/samples/landscapes/nature-mountains.jpg",
   secondImage:
     "https://res.cloudinary.com/sahsa/image/upload/v1637953596/samples/landscapes/architecture-signs.jpg",
-  sliderVideo:
-    "https://res.cloudinary.com/sahsa/video/upload/v1638104290/test-shop/Social_Media_-_1360_rr3sqs.mp4",
 };
 
 const HomePage = () => {
@@ -24,6 +23,7 @@ const HomePage = () => {
 
   return (
     <HomePageStyled>
+      <HomeSlider sliderData={sliderData} />
       <CategotyList lastProducts={lastProducts} />
     </HomePageStyled>
   );

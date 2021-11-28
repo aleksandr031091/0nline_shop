@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useHistory, useLocation } from "react-router";
-import { setProduct } from "../../redux/products/productActions";
+import {
+  setIsProductOut,
+  setProduct,
+} from "../../redux/products/productActions";
 import { getAllProducts } from "../../redux/products/productsSelectors";
 import CategoryItem from "./category_item/CategoryItem";
 import CategotyListStyled from "./CategotyListStyled";
@@ -23,12 +26,13 @@ const CategotyList = ({ lastProducts }) => {
       (product) => product.name === targetProduct[1].textContent
     );
 
-    //   ========================set localStorage========================
+    //   ======================== set localStorage ========================
     let localList = localStorage.getItem("productsIdList") || "[]";
     localList = JSON.parse(localList);
     localList.push(product.id);
+
     localStorage.setItem("productsIdList", JSON.stringify(localList));
-    //   ========================set localStorage========================
+    //   ======================== set localStorage ========================
 
     dispatch(setProduct(product));
     history.push("/products");
@@ -42,6 +46,10 @@ const CategotyList = ({ lastProducts }) => {
     let start = (page - 1) * pageSize;
     let end = start + pageSize;
     const productsCount = allProducts.slice(start, end);
+
+    if (allProducts.length < end) {
+      dispatch(setIsProductOut(true));
+    }
 
     setPage((prev) => prev + 1);
     setProductsState((prev) => [...prev, ...productsCount]);

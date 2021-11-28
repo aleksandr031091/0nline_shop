@@ -1,13 +1,17 @@
 import Slider from "react-slick";
+import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import { setProduct } from "../../redux/products/productActions";
 import { getAllProducts } from "../../redux/products/productsSelectors";
 import CategoryItem from "../category_list/category_item/CategoryItem";
 import SliderStyled from "./SliderStyled";
 import sprite from "../../images/sprite.svg";
 import useModal from "../../hooks/useModal";
 
-const SlickSlider = () => {
+const SlickSlider = ({ homePageState }) => {
   const allProducts = useSelector(getAllProducts);
+
+  // ============================ slider ============================
   const [stateModal] = useModal();
 
   function SampleNextArrow(props) {
@@ -50,12 +54,38 @@ const SlickSlider = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+  // ============================ slider ============================
+
+  // ============================ click card ============================
+
+  const dispatch = useDispatch();
+
+  const onHandleClickCardSlider = (e) => {
+    const targetProduct = e.currentTarget.childNodes;
+    const product = allProducts.find(
+      (product) => product.name === targetProduct[1].textContent
+    );
+
+    //   ======================== set localStorage ========================
+    let localList = localStorage.getItem("productsIdList") || "[]";
+    localList = JSON.parse(localList);
+    localList.push(product.id);
+    localStorage.setItem("productsIdList", JSON.stringify(localList));
+    //   ======================== set localStorage ========================
+
+    dispatch(setProduct(product));
+  };
+  // ============================ click card ============================
 
   return (
     <SliderStyled>
       <Slider {...settings}>
         {allProducts.map((product) => (
-          <CategoryItem key={product.id} product={product} />
+          <CategoryItem
+            key={product.id}
+            product={product}
+            onHandleClickCard={onHandleClickCardSlider}
+          />
         ))}
       </Slider>
     </SliderStyled>

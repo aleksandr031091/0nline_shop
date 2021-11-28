@@ -56,6 +56,10 @@ const SliderStyled = styled.div`
     margin: 0 auto;
   }
 
+  .home_slider_item {
+    position: relative;
+  }
+
   @media screen and (min-width: 1280px) {
     .card_image {
       height: 200px;
