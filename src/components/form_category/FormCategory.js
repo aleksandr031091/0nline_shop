@@ -1,6 +1,9 @@
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { setProducts } from "../../redux/products/productActions";
+import {
+  setIsProductOut,
+  setProducts,
+} from "../../redux/products/productActions";
 import { getAllProducts } from "../../redux/products/productsSelectors";
 import FormCategoryStyled from "./FormCategoryStyled";
 
@@ -53,6 +56,7 @@ const FormCategory = () => {
     const resSortArrProducts = sortProducts(target.textContent);
 
     dispatch(setProducts(resSortArrProducts));
+    dispatch(setIsProductOut(false));
   };
 
   return (

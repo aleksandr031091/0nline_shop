@@ -19,18 +19,25 @@ const CategotyListStyled = styled.div`
     width: 200px;
     color: #123;
     background-color: #fffb004c;
-    border: 1px solid #ff3c00;
+    border: 1px solid #ffee56;
     border-radius: 5px;
     box-shadow: 0px 4px 19px 0px rgba(0, 8, 255, 0.2);
     cursor: pointer;
     transition: 300ms;
   }
 
-  .btn_list_more:hover,
-  .btn_list_more:focus {
-    border: 1px solid #00ff22;
+  .btn_list_more:hover {
+    border: 1px solid #a1ffae;
     transform: scale(1.1);
   }
+
+  .btn_list_more:disabled {
+    color: silver;
+    background-color: transparent;
+    border: 1px solid #ff764c7a;
+    transform: none;
+  }
+
   @media screen and (min-width: 485px) {
     .products_list {
       display: flex;

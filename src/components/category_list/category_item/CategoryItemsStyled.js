@@ -6,7 +6,7 @@ const CategoryItemsStyled = styled.li`
   width: 100%;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.2);
   transition: 300ms;
 
   :hover,

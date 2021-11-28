@@ -74,6 +74,11 @@ const SlickSlider = ({ homePageState }) => {
     //   ======================== set localStorage ========================
 
     dispatch(setProduct(product));
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
   // ============================ click card ============================
 

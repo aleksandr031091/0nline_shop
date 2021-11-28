@@ -2,8 +2,13 @@ import Slider from "react-slick";
 import sprite from "../../images/sprite.svg";
 import sliderVideo from "../../video/bg.mp4";
 import HomeSliderStyled from "./HomeSliderStyled";
-
-const HomeSlider = ({ sliderData }) => {
+const sliderData = {
+  firsImage:
+    "https://res.cloudinary.com/sahsa/image/upload/v1637953601/samples/landscapes/nature-mountains.jpg",
+  secondImage:
+    "https://res.cloudinary.com/sahsa/image/upload/v1637953596/samples/landscapes/architecture-signs.jpg",
+};
+const HomeSlider = () => {
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (

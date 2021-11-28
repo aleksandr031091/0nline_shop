@@ -6,12 +6,16 @@ import {
   setIsProductOut,
   setProduct,
 } from "../../redux/products/productActions";
-import { getAllProducts } from "../../redux/products/productsSelectors";
+import {
+  getAllProducts,
+  getIsProductOut,
+} from "../../redux/products/productsSelectors";
 import CategoryItem from "./category_item/CategoryItem";
 import CategotyListStyled from "./CategotyListStyled";
 
 const CategotyList = ({ lastProducts }) => {
   const allProducts = useSelector(getAllProducts);
+  const isProductsOut = useSelector(getIsProductOut);
   const dispatch = useDispatch();
   const history = useHistory();
   const location = useLocation();
@@ -36,18 +40,25 @@ const CategotyList = ({ lastProducts }) => {
 
     dispatch(setProduct(product));
     history.push("/products");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   //   ========================load more========================
   const [productsState, setProductsState] = useState([]);
   const [page, setPage] = useState(2);
   const pageSize = 6;
+
   const onHandleClickMore = () => {
     let start = (page - 1) * pageSize;
     let end = start + pageSize;
+
     const productsCount = allProducts.slice(start, end);
 
     if (allProducts.length < end) {
+      setPage(1);
       dispatch(setIsProductOut(true));
     }
 
@@ -78,7 +89,11 @@ const CategotyList = ({ lastProducts }) => {
             ))}
       </ul>
       {location.pathname === "/category" && (
-        <button className="btn_list_more" onClick={onHandleClickMore}>
+        <button
+          className="btn_list_more"
+          onClick={onHandleClickMore}
+          disabled={isProductsOut && true}
+        >
           More products
         </button>
       )}
