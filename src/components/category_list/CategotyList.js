@@ -23,7 +23,7 @@ const CategotyList = ({ lastProducts }) => {
   useEffect(() => {
     setProductsState(allProducts.slice(0, pageSize));
     dispatch(setIsProductOut(false));
-  }, [allProducts]);
+  }, [allProducts, dispatch]);
 
   const onHandleClickCard = (e) => {
     const targetProduct = e.currentTarget.childNodes;
