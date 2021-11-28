@@ -45,11 +45,19 @@ const HomeSlider = () => {
   return (
     <HomeSliderStyled>
       <Slider {...settings}>
-        <img src={sliderData.firsImage} alt={sliderData.firsImage} />
-        <video autoPlay loop muted>
+        <img
+          className="slider_item"
+          src={sliderData.firsImage}
+          alt={sliderData.firsImage}
+        />
+        <video className="slider_item" autoPlay loop muted>
           <source src={sliderData.video} type="video/mp4" />
         </video>
-        <img src={sliderData.secondImage} alt={sliderData.firsImage} />
+        <img
+          className="slider_item"
+          src={sliderData.secondImage}
+          alt={sliderData.firsImage}
+        />
       </Slider>
     </HomeSliderStyled>
   );

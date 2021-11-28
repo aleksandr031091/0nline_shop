@@ -55,6 +55,9 @@ const HomeSliderStyled = styled.div`
     fill: #ffffff;
   }
 
+  .slider_item {
+    min-height: 200px;
+  }
   @media screen and (min-width: 480px) {
     .slider_icon {
       width: 20px;
@@ -70,6 +73,14 @@ const HomeSliderStyled = styled.div`
     .btn_prev {
       width: 50px;
       height: 50px;
+    }
+    .slider_item {
+      min-height: 270px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .slider_item {
+      min-height: 790px;
     }
   }
 `;

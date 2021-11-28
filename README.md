@@ -4,7 +4,7 @@ MVP version
 
 Page routing. Imitation of loading goods. Displaying products from low to large prices and vice versa, a slider with products as well as the last four products viewed by the user
 
-This project was bootstrapped with [Netlify](https://www.netlify.com).
+This project was bootstrapped with [Vercel](https://vercel.com).
 
 ## Installation
 
