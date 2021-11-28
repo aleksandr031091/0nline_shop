@@ -22,6 +22,7 @@ const CategotyList = ({ lastProducts }) => {
 
   useEffect(() => {
     setProductsState(allProducts.slice(0, pageSize));
+    dispatch(setIsProductOut(false));
   }, [allProducts]);
 
   const onHandleClickCard = (e) => {

@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(setProducts(products));
-    // history.push("/");
+    history.push("/");
   }, [dispatch, history]);
 
   return (
