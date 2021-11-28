@@ -3,6 +3,7 @@
     "id": "1",
     "category": "mobile",
     "name": "samsung s8",
+    "isSale": true,
     "price": "10000,90",
     "description": "Экран (6.5, PLS, 1600x720) / Samsung Exynos 850 (2.0 ГГц) / основная квадро-камера: 48 Мп + 5 Мп + 2 Мп + 2 Мп, фронтальная камера: 8 Мп / RAM 4 ГБ / 64 ГБ встроенной памяти + microSD (до 1 ТБ) / 3G / LTE / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 11 / 5000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957103/test-shop/Samsung-Galaxy-A50_sduio7.jpg"
@@ -11,6 +12,7 @@
     "id": "2",
     "category": "mobile",
     "name": "samsung s20",
+    "isSale": false,
     "price": "20000,99",
     "description": "Экран (6.2), Dynamic AMOLED 2X, 2400x1080)/ Samsung Exynos 2100 (1 x 2.9 ГГц + 3 x 2.8 ГГц + 4 x 2.2 ГГц)/ тройная основная камера: 64 Мп + 12 Мп + 12 Мп, фронтальная 10 Мп/ RAM 8 ГБ/ 256 ГБ встроенной памяти/ 3G/ LTE/ 5G/ GPS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 11.0/ 4000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -19,6 +21,7 @@
     "id": "3",
     "category": "mobile",
     "name": "samsung s30 ",
+    "isSale": true,
     "price": "30000,00",
     "description": "Экран (6.1, IPS, 1792x828)/ Apple A12 Bionic/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 128 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM, eSIM/ iOS 12",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -27,6 +30,7 @@
     "id": "4",
     "category": "mobile",
     "name": "samsung pro ultra",
+    "isSale": true,
     "price": "23000,99",
     "description": "Экран (6.2), Dynamic AMOLED 2X, 2400x1080)/ Samsung Exynos 2100 (1 x 2.9 ГГц + 3 x 2.8 ГГц + 4 x 2.2 ГГц)/ тройная основная камера: 64 Мп + 12 Мп + 12 Мп, фронтальная 10 Мп/ RAM 8 ГБ/ 256 ГБ встроенной памяти/ 3G/ LTE/ 5G/ GPS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 11.0/ 4000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -35,6 +39,7 @@
     "id": "5",
     "category": "mobile",
     "name": "samsung ultra gelaxy pro ",
+    "isSale": false,
     "price": "15000,00",
     "description": "Экран (6.5, PLS, 1600x720) / Samsung Exynos 850 (2.0 ГГц) / основная квадро-камера: 48 Мп + 5 Мп + 2 Мп + 2 Мп, фронтальная камера: 8 Мп / RAM 4 ГБ / 64 ГБ встроенной памяти + microSD (до 1 ТБ) / 3G / LTE / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 11 / 5000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -43,6 +48,7 @@
     "id": "6",
     "category": "mobile",
     "name": "iphone 12",
+    "isSale": false,
     "price": "40000,99",
     "description": "Экран (6.2), Dynamic AMOLED 2X, 2400x1080)/ Samsung Exynos 2100 (1 x 2.9 ГГц + 3 x 2.8 ГГц + 4 x 2.2 ГГц)/ тройная основная камера: 64 Мп + 12 Мп + 12 Мп, фронтальная 10 Мп/ RAM 8 ГБ/ 256 ГБ встроенной памяти/ 3G/ LTE/ 5G/ GPS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 11.0/ 4000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957132/test-shop/oboi-iz-iphone-12_fqr3tp.jpg"
@@ -51,6 +57,7 @@
     "id": "7",
     "category": "mobile",
     "name": "iphone 13",
+    "isSale": true,
     "price": "50000,99",
     "description": "Экран (6.1, IPS, 1792x828)/ Apple A12 Bionic/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 128 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM, eSIM/ iOS 12",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957132/test-shop/oboi-iz-iphone-12_fqr3tp.jpg"
@@ -59,6 +66,7 @@
     "id": "8",
     "category": "mobile",
     "name": "samsung s8 ultra",
+    "isSale": false,
     "price": "10000,99",
     "description": "Экран (6.5, PLS, 1600x720) / Samsung Exynos 850 (2.0 ГГц) / основная квадро-камера: 48 Мп + 5 Мп + 2 Мп + 2 Мп, фронтальная камера: 8 Мп / RAM 4 ГБ / 64 ГБ встроенной памяти + microSD (до 1 ТБ) / 3G / LTE / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 11 / 5000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957103/test-shop/Samsung-Galaxy-A50_sduio7.jpg"
@@ -67,6 +75,7 @@
     "id": "9",
     "category": "mobile",
     "name": "samsung s20 ultra",
+    "isSale": false,
     "price": "20000,99",
     "description": "Экран (6.2), Dynamic AMOLED 2X, 2400x1080)/ Samsung Exynos 2100 (1 x 2.9 ГГц + 3 x 2.8 ГГц + 4 x 2.2 ГГц)/ тройная основная камера: 64 Мп + 12 Мп + 12 Мп, фронтальная 10 Мп/ RAM 8 ГБ/ 256 ГБ встроенной памяти/ 3G/ LTE/ 5G/ GPS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 11.0/ 4000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -75,6 +84,7 @@
     "id": "10",
     "category": "mobile",
     "name": "samsung s30 ultra",
+    "isSale": false,
     "price": "30000,00",
     "description": "Экран (6.2), Dynamic AMOLED 2X, 2400x1080)/ Samsung Exynos 2100 (1 x 2.9 ГГц + 3 x 2.8 ГГц + 4 x 2.2 ГГц)/ тройная основная камера: 64 Мп + 12 Мп + 12 Мп, фронтальная 10 Мп/ RAM 8 ГБ/ 256 ГБ встроенной памяти/ 3G/ LTE/ 5G/ GPS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 11.0/ 4000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -83,6 +93,7 @@
     "id": "11",
     "category": "mobile",
     "name": "samsung s30 ultra pro",
+    "isSale": true,
     "price": "30000,00",
     "description": "Экран (6.2), Dynamic AMOLED 2X, 2400x1080)/ Samsung Exynos 2100 (1 x 2.9 ГГц + 3 x 2.8 ГГц + 4 x 2.2 ГГц)/ тройная основная камера: 64 Мп + 12 Мп + 12 Мп, фронтальная 10 Мп/ RAM 8 ГБ/ 256 ГБ встроенной памяти/ 3G/ LTE/ 5G/ GPS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 11.0/ 4000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -91,6 +102,7 @@
     "id": "12",
     "category": "mobile",
     "name": "iphone 13 pro",
+    "isSale": true,
     "price": "15000,00",
     "description": "Экран (6.5, PLS, 1600x720) / Samsung Exynos 850 (2.0 ГГц) / основная квадро-камера: 48 Мп + 5 Мп + 2 Мп + 2 Мп, фронтальная камера: 8 Мп / RAM 4 ГБ / 64 ГБ встроенной памяти + microSD (до 1 ТБ) / 3G / LTE / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 11 / 5000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957132/test-shop/oboi-iz-iphone-12_fqr3tp.jpg"
@@ -99,6 +111,7 @@
     "id": "13",
     "category": "mobile",
     "name": "iphone 15",
+    "isSale": true,
     "price": "42000,99",
     "description": "Экран (6.1, IPS, 1792x828)/ Apple A12 Bionic/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 128 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM, eSIM/ iOS 12",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957132/test-shop/oboi-iz-iphone-12_fqr3tp.jpg"
@@ -107,6 +120,7 @@
     "id": "14",
     "category": "mobile",
     "name": "iphone 10",
+    "isSale": false,
     "price": "55000,50",
     "description": "Экран (6.1, IPS, 1792x828)/ Apple A12 Bionic/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 128 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM, eSIM/ iOS 12",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957132/test-shop/oboi-iz-iphone-12_fqr3tp.jpg"
@@ -115,6 +129,7 @@
     "id": "15",
     "category": "mobile",
     "name": "samsung super",
+    "isSale": false,
     "price": "23000,99",
     "description": "Экран (6.2), Dynamic AMOLED 2X, 2400x1080)/ Samsung Exynos 2100 (1 x 2.9 ГГц + 3 x 2.8 ГГц + 4 x 2.2 ГГц)/ тройная основная камера: 64 Мп + 12 Мп + 12 Мп, фронтальная 10 Мп/ RAM 8 ГБ/ 256 ГБ встроенной памяти/ 3G/ LTE/ 5G/ GPS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 11.0/ 4000 мА*ч",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957114/test-shop/unnamed_noxsh3.jpg"
@@ -123,6 +138,7 @@
     "id": "16",
     "category": "mobile",
     "name": "iphone 20",
+    "isSale": true,
     "price": "55000,99",
     "description": "Экран (6.1, IPS, 1792x828)/ Apple A12 Bionic/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 3 ГБ/ 128 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM, eSIM/ iOS 12",
     "image": "https://res.cloudinary.com/sahsa/image/upload/v1637957132/test-shop/oboi-iz-iphone-12_fqr3tp.jpg"

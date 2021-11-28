@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { useHistory, useLocation } from "react-router";
 import { setProduct } from "../../redux/products/productActions";
 import { getAllProducts } from "../../redux/products/productsSelectors";
+import CategoryItem from "./category_item/CategoryItem";
 import CategotyListStyled from "./CategotyListStyled";
 
 const CategotyList = ({ lastProducts }) => {
@@ -52,30 +53,20 @@ const CategotyList = ({ lastProducts }) => {
       <ul className="products_list">
         {productsState && location.pathname === "/category"
           ? productsState.map((product) => (
-              <li
+              <CategoryItem
                 key={product.id}
-                className="products_list_card"
-                onClick={onHandleClickCard}
-              >
-                <img src={product.image} alt="phone" className="card_image" />
-                <h3 className="product_name">{product.name}</h3>
-                <p className="price">price: {product.price} $</p>
-                <button className="btn_buy">Buy</button>
-              </li>
+                product={product}
+                onHandleClickCard={onHandleClickCard}
+              />
             ))
           : lastProducts &&
             location.pathname === "/" &&
             lastProducts.map((product) => (
-              <li
+              <CategoryItem
                 key={product.id}
-                className="products_list_card"
-                onClick={onHandleClickCard}
-              >
-                <img src={product.image} alt="phone" className="card_image" />
-                <h3 className="product_name">{product.name}</h3>
-                <p className="price">price: {product.price} $</p>
-                <button className="btn_buy">Buy</button>
-              </li>
+                product={product}
+                onHandleClickCard={onHandleClickCard}
+              />
             ))}
       </ul>
       {location.pathname === "/category" && (

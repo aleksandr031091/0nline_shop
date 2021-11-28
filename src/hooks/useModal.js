@@ -3,10 +3,9 @@ import { useLocation } from "react-router";
 
 const initialState = {
   width: window.innerWidth,
-  //   breakPointDesctop: 1280,
+  breakPointDesctop: 1280,
   breakPointMobile: 485,
   isModalOpen: false,
-  //   modalName: "header",
 };
 
 const useModal = () => {
