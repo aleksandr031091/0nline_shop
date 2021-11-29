@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { getAllProducts } from "../../redux/products/productsSelectors";
 import CategotyList from "../../components/category_list/CategotyList";
-import HomeSlider from "../../components/homeSlider/HomeSlider";
+import HomeSlider from "../../components/home_slider/HomeSlider";
 import HomePageStyled from "./HomePageStyled";
 
 const HomePage = () => {

@@ -12,6 +12,7 @@ const sliderData = {
 const HomeSlider = () => {
   function SampleNextArrow(props) {
     const { onClick } = props;
+
     return (
       <button className="btn_arrow" onClick={onClick}>
         <svg className="slider_icon">
@@ -23,6 +24,7 @@ const HomeSlider = () => {
 
   function SamplePrevArrow(props) {
     const { onClick } = props;
+
     return (
       <button className="btn_prev" onClick={onClick}>
         <svg className="slider_icon">
@@ -50,9 +52,11 @@ const HomeSlider = () => {
           src={sliderData.firsImage}
           alt={sliderData.firsImage}
         />
+
         <video className="slider_item" autoPlay loop muted>
           <source src={sliderData.video} type="video/mp4" />
         </video>
+
         <img
           className="slider_item"
           src={sliderData.secondImage}

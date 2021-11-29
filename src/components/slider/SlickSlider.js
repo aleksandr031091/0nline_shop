@@ -45,12 +45,19 @@ const SlickSlider = ({ homePageState }) => {
     return 5;
   };
 
+  const countSliderScroll = () => {
+    if (stateModal.width > stateModal.breakPointDesctop) {
+      return 3;
+    }
+    return 1;
+  };
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 1000,
     slidesToShow: countSliderPage(),
-    slidesToScroll: 1,
+    slidesToScroll: countSliderScroll(),
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
