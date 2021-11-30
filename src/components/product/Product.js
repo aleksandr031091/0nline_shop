@@ -13,8 +13,18 @@ const Product = () => {
       <h3 className="product_name">{product.name}</h3>
       <p className="product_description">{product.description}</p>
       <div className="price_box">
-        <p className="product_price">{product.price}</p>
+        {product.isSale ? (
+          <div className="sale_price_box">
+            <p className="old_price">{product.price} $</p>
+            <p className="product_price sale_price">{product.salePrice} $</p>
+          </div>
+        ) : (
+          <div>
+            <p className="product_price">{product.price} $</p>
+          </div>
+        )}
         <button className="btn_buy">Buy</button>
+        {product.isSale && <span className="product_sale">sale</span>}
       </div>
     </ProductStyled>
   );

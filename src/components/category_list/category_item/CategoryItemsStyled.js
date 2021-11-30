@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 const CategoryItemsStyled = styled.li`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   width: 100%;
   border-radius: 5px;
@@ -43,6 +46,18 @@ const CategoryItemsStyled = styled.li`
   .price {
     font-weight: 700;
     margin-bottom: 10px;
+  }
+  .sale_price_box {
+    width: 100%;
+  }
+
+  .price.sale_price {
+    color: tomato;
+  }
+
+  .old_price {
+    color: #858585;
+    font-size: 12px;
   }
 
   .btn_buy {

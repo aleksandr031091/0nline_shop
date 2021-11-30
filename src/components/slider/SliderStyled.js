@@ -15,6 +15,10 @@ const SliderStyled = styled.div`
     list-style: none;
   }
 
+  .slick-slide :only-child {
+    height: 100%;
+  }
+
   .btn_arrow {
     position: absolute;
     bottom: 45%;
@@ -52,7 +56,6 @@ const SliderStyled = styled.div`
   }
 
   .products_list_card {
-    height: 100%;
     width: 100%;
     margin: 0 auto;
   }
